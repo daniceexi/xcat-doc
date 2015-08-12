@@ -1,11 +1,8 @@
-The basics
-  - xCAT Overview, Architecture and Planning
-  - xCAT Commands
-  - xCAT Man Pages
-  - xCAT DataBase Tables
-  - xCAT Object Definitions
-  - Listing and Modifying the Database
-  - Node Group Support
+Overview
+  - How to Use this Doc
+  - Purpose [xCAT Overview, Architecture and Planning#Overview]
+  - Architecture [xCAT Overview, Architecture and Planning#architecture]
+  - Process of Setting up a Cluster [XCAT_pLinux_Clusters#Overview of Cluster Setup Process]
 
 Install Guides
   - Installation Guide for Red Hat Enterprise Linux
@@ -13,58 +10,92 @@ Install Guides
     - Install xCAT
     - Configure xCAT
       - Choosing database
-      - Cluster Name Resolution
       - Setup passwords
       - Syslog and auditlog
+      - Setting up DHCP Service
+      - Cluster Name Resolution
       - Setting up NTP in xCAT
       - Granting Users xCAT privileges
   - Installation Guide for SUSE Linux Enterprise Server
-    - Prepare the Management Node
-    - Install xCAT
-    - Configure xCAT
-      - Choosing database
-      - Cluster Name Resolution
-      - Setup passwords
-      - Syslog and auditlog
-      - Setting up NTP in xCAT
-      - Granting Users xCAT privileges
+    - Refer to 'Installation Guide for Red Hat Enterprise Linux'
   - Installation Guide for Ubuntu Server LTS
-    - Prepare the Management Node
-    - Install xCAT
-    - Configure xCAT
-      - Choosing database
-      - Cluster Name Resolution
-      - Setup passwords
-      - Syslog and auditlog
-      - Setting up NTP in xCAT
-      - Granting Users xCAT privileges
+    - Refer to 'Installation Guide for Red Hat Enterprise Linux'
   - xCAT Mgmt Node Backup and Restore
   - Uninstalling xCAT
 
 Admin Guides
+  - Basic Concepts
+    - xCAT Object
+      - node
+        - node range
+      - osimage
+      - group
+    - xCAT Database [Listing and Modifying the Database,Regular Expression in DB]
+    - Global Configuration [Site table]
+    - Network
+      - Network Service which used in xCAT
+      - Network Configuration 
+    
   - Managing IBM Power 8 LE and OpenPOWER baremetal cluster
-    - Hardware Discovery
+    - Hardware Discovery [P8LE should be shared with x86]
+      - Manually Define node
+      - MTMS Based
+      - Switch Based
+        - Enable snmp for Switches
+      - Sequential Based
+      - Manual Discovery
     - Hardware management
-    - Operating system images management
-      - Select or Create an osimage Definition
-      - Customize the osimage definitions
-      - Configuring secondary adapters
-      - Using Linux Driver Update Disk
-      - Making Images Portable in xCAT
-      - Use RAID1 In xCAT Cluster
-      - Enable kdump over Ethernet
-    - Operating system provisioning
-      - Postscripts and Prescripts
-      - Sync-ing Config Files to Nodes
-      - Adding additional software
-      - Initialize the network boot
-      - Monitor the provisioning
+      - rpower
+      - rspconfig
+      - reventlog
+      - rbeacon
+      - rcons
+      - rinv
+      - rvitals
+      - rflash
+      - renergy
+    - Installing Diskful System
+      - Operating system images management
+        - Select or Create an osimage Definition
+        - Customize the osimage definitions
+        - Configuring secondary adapters
+        - Using Linux Driver Update Disk
+        - Making Images Portable in xCAT [diskless only?]
+        - Use RAID1 In xCAT Cluster
+        - Enable kdump over Ethernet
+      - Operating system provisioning
+        - Postscripts and Prescripts
+        - Sync-ing Config Files to Nodes
+        - Adding additional software
+        - Initialize the network boot
+        - Monitor the provisioning 
+    - Installing Diskless System
+      - Operating system images management
+        - Select or Create an osimage Definition
+        - Customize the osimage definitions
+        - Generate Diskless Images
+          - Sync-ing Config Files to Nodes
+          - Adding additional software
+            - rh/sles
+            - ubuntu
+        - Configuring secondary adapters
+        - Using Linux Driver Update Disk
+        - Making Images Portable in xCAT
+        - Enable kdump over Ethernet
+      - Operating system provisioning
+        - Postscripts and Prescripts
+        - Initialize the network boot
+        - Monitor the provisioning    
     - Using updatenode
     - Parallel Commands and Inventory
   - Managing IBM Power 8 LE and OpenPOWER KVM cluster
   - Managing x86_64 baremetal cluster
   - Managing x86_64 KVM cluster
-
+  
+  - References
+    - xCAT Commands
+    - xCAT Man Pages
+    - xCAT DataBase Tables
 
 Developers
   - xCAT developer guide
@@ -75,6 +106,7 @@ Advanced Topics
   - Setting Up a Linux Hierarchical Cluster
   - xCAT Linux Statelite
   - Hints and Tips for Large Scale Clusters
+    - Planning Cluster [xCAT Overview, Architecture and Planning#Planning]
     - Managing Large Tables
   - Highly Available Management Node
   - Configuring IPv6 in xCAT Cluster
