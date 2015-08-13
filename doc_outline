@@ -1,8 +1,10 @@
 Overview
-  - How to Use this Doc
-  - Purpose [xCAT Overview, Architecture and Planning#Overview]
+  - How to Use This Document
+  - What's xCAT [xCAT Overview, Architecture and Planning#Overview]
   - Architecture [xCAT Overview, Architecture and Planning#architecture]
   - Process of Setting up a Cluster [XCAT_pLinux_Clusters#Overview of Cluster Setup Process]
+  - Supported Hardware and Operating System
+  - Network Topology Requirement
 
 Install Guides
   - Installation Guide for Red Hat Enterprise Linux
@@ -32,12 +34,12 @@ Admin Guides
       - group
     - xCAT Database [Listing and Modifying the Database,Regular Expression in DB]
     - Global Configuration [Site table]
-    - Network
+    - Network Planning
       - Network Service which used in xCAT
       - Network Configuration 
     
   - Managing IBM Power 8 LE and OpenPOWER baremetal cluster
-    - Hardware Discovery [P8LE should be shared with x86]
+    - Hardware Discover & Node Define [P8LE should be shared with x86]
       - Manually Define node
       - MTMS Based
       - Switch Based
